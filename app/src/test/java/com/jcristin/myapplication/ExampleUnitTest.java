@@ -18,17 +18,17 @@ public class ExampleUnitTest {
 
     @Test
     public void wrongPassword() {
-        assertFalse(lv.verify("test@test.com", "blabla"));
+        assertFalse(lv.verifyEmailAndPassword("test@test.com", "blabla"));
     }
 
     @Test
     public void wrongEmail() {
-        assertFalse(lv.verify("test@test.xxx", "1234"));
+        assertFalse(lv.verifyEmailAndPassword("test@test.xxx", "1234"));
     }
 
 
     @Test
     public void allOK() {
-        assertTrue(lv.verify("test@test.com", "1234"));
+        assertTrue(lv.verifyEmailAndPassword("test@test.com", "1234"));
     }
 }
