@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-        if (loginVerification.verify(email.getText().toString(), password.getText().toString()))
+        if (loginVerification.verifyLogin(email.getText().toString(), password.getText().toString()))
             Toast.makeText(this, "Login Sucessful", Toast.LENGTH_SHORT).show();
         else
             Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show();
