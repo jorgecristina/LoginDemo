@@ -1,0 +1,3 @@
+include ':LoginVerification'
+include ':app'
+rootProject.name = "Login Demo"
